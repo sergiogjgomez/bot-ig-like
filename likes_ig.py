@@ -4,7 +4,7 @@ import pyautogui as auto
 
 bucle = True
 start = False
-tipo = input('Publicacion (p) o historia(h)? (p/h): ')
+tipo = input('Publicacion (p) , reel(r) o historia(h)? (p/r/h): ')
 
 def on_q_press(event):
     if event.name == 'q':
