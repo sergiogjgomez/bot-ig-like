@@ -5,6 +5,8 @@ import pyautogui as auto
 bucle = True
 start = False
 tipo = input('Publicacion (p) , reel(r) o historia(h)? (p/r/h): ')
+input_iterations = input('Introducí el max de iteraciones (por defecto = 100): ')
+iterations = 100 if input_iterations=='' else int(input_iterations)
 
 def on_q_press(event):
     if event.name == 'q':
@@ -39,7 +41,7 @@ while bucle:
         
         bucle_number += 1
 
-        if bucle_number > 1000:
+        if bucle_number > iterations:
             break
 
     else:
