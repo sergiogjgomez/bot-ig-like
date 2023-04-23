@@ -10,13 +10,13 @@ iterations = 100 if input_iterations=='' else int(input_iterations)
 
 def on_q_press(event):
     if event.name == 'q':
-        print('finish')
+        print('Finish Fork (you did press Q)')
         global bucle
         bucle = False
 
 def on_s_press(event):
     if event.name == 's':
-        print('start')
+        print('Start!! :)')
         global start
         start = True
 
@@ -42,6 +42,7 @@ while bucle:
         bucle_number += 1
 
         if bucle_number > iterations:
+            print(f"Finish Iteration with: {bucle_number} iterations")
             break
 
     else:
