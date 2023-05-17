@@ -7,7 +7,7 @@ start = False
 tipo = input('Publicacion (p) , reel(r) o historia(h)? (p/r/h): ')
 input_iterations = input('Introducí el max de iteraciones (por defecto = 100): ')
 iterations = 100 if input_iterations=='' else int(input_iterations)
-input_number_time = input('Introduce los minutos que quieres de "sleep" (por defecto = 1)')
+input_number_time = input('Introduce los minutos que quieres de "sleep" (por defecto = 1): ')
 number_time = 1 if input_number_time == '' else int(input_number_time)
 
 def on_q_press(event):
